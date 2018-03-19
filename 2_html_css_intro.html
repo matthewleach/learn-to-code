@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML & CSS Overview | Galvanize</title>
+
+    <?php include('head.html');?>
+
+
+
+<body id="top">
+
+<div id="side-nav">
+  <div class="handle">
+        <button id="side-nav-toggle"><i class="fa fa-bookmark fa-lg"></i></button>
+      </div>
+   
+        <ul>
+        <li><a href="#lesson-intro">Lesson Overview</a></li>
+        <li><a href="#intro">Code Overview</a></li>
+        <li><a href="#html">HTML: Definition</a></li>
+        <li><a href="#css">CSS: Definition</a></li>
+        <li><a href="#relationship">The Relationship: HTML & CSS</a></li>
+        <li><a href="#editor">Introduction: Code Editor</a></li>
+        <li><a href="#coding">Working with a Code Editor</a></li>
+        <li><a href="#practice">Practice Project</a></li>
+
+</ul>
+</div>
+
+
+
+<div class="hero">
+  <h2>HTML &amp; CSS</h2>
+  <p>Understanding the BIG picture first</p>
+</div>
+
+<!--
+<div class="bg-dark">
+<div class="container video">
+  <iframe allowfullscreen="" src="http://player.vimeo.com/video/110498128" frameborder="0" width="960" height="540"></iframe>
+</div>
+</div>-->
+
+
+<span class="anchor" id="lesson-intro"></span>
+<div class="title">
+  <h2>Lesson Overview</h2>
+</div>
+<div class="lessons">
+  <p>In this lesson, you'll be introduced to HTML and CSS. Once you understand what both HTML and CSS  does, and how they work together, you'll get the opprotunity to edit the code is create a similar web page to this example below. </p>
+  <p><a href="https://unsplash.com/" target="_blank"><img src="images/web/sample-one-night.jpg" width="640" alt=""/></a></p>
+</div>
+
+
+<span class="anchor" id="intro"></span>
+<div class="title">
+  <h2>Code Overview</h2>
+</div>
+<div class="lessons">
+<iframe src="https://player.vimeo.com/video/127983324" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<!--<p><a class="show_hide read-more-trigger" href="#" rel="#slidingDiv">Open Lecture</a></p>
+-->  <div id="slidingDiv" style="display: block;">
+  <hr>
+<div style="float:left; width: 47%; padding-right: 3%;">
+  <h3><img src="images/web/HTML5_Logo.png" width="160px"  style="display:block; margin:auto;" /></h3>
+  <p class="center lead"><strong>H</strong>yper<strong>T</strong>ext<strong><br>
+    M</strong>arkup<br>
+    <strong>L</strong>anguage</p>
+  <p class="center" style="background-color:#e44d26; color: #fff; padding: .5rem; margin-bottom: 1rem; border-radius: .5rem;">HTML dictates Content </p>
+  <p>Adds text, images, videos,  links &amp; containers to the page.<em><br>
+  </em></p>
+</div>
+<div style="float:left; width: 47%; padding-left: 3%; position: relative;">
+  <h3><img src="images/web/css3-logo.png" width="160px" style="display:block; margin:auto;"/></h3>
+  <p class="center lead"><strong>C</strong>ascading <strong><br>
+    S</strong>tyle <br>
+    <strong>S</strong>heets</p>
+  <p class="center" style="background-color:#2162af; color: #fff; padding: .5rem; margin-bottom: 1rem; border-radius: .5rem;">CSS dictates Style</p>
+  <p>Applies colors, visual page layout, font styles, etc. to the HTML elements.</p>
+</div>
+
+<div style="clear:both;"></div>
+
+
+
+<hr>
+<h3>Detective Work</h3>
+<p>To view a web page's source code using Chrome:</p>
+<ol class="callout callout-push">
+  <li>Right-click the background or text of a web page</li>
+  <li>Click View Page Source to view the HTML code of that page.</li>
+  <li>To view the CSS, you'll need to find the link to the .css page, or click the image below.</li>
+  </ol>
+<p><br>
+</p>
+
+<div style="float:left; width: 30%; padding-right: 3%;">
+  <h3>HTML & CSS </h3>
+<p><a href="http://www.leodislager.com/" target="_blank"><img src="images/web/leodis-mainsite.jpg" style="width:100%" /></a></p>
+</div>
+
+
+
+<div style="float:left; width: 30%; padding-left: 3%; position: relative;">
+  <h3>HTML  Code</h3>
+<a href="view-source:http://www.leodislager.com/" target="_blank" class="example-image-link"><img class="example-image" src="images/web/leodis-html-only.jpg" style="width:100%" /></a></div>
+
+
+<div style="float:left; width: 30%; padding-left: 3%; position: relative;">
+  <h3>CSS  Code</h3>
+<a href="http://www.leodislager.com/assets/css/main.css?v=2" target="_blank" class="example-image-link"><img class="example-image" src="images/web/leodis-css-sample.jpg" style="width:100%" /></a></div>
+
+
+<div style="clear:both;"></div>
+<h4><a href="http://www.leodislager.com/" target="_blank">http://www.leodislager.com/</a>  <a href="http://www.leodislager.com/assets/css/main.css?v=2" target="_blank">
+  </a></h4>
+</div>
+</div>
+
+
+
+
+<span class="anchor" id="html"></span>
+<div class="title">
+ <h2>HTML: Definition</h2>
+</div>
+<div class="lessons">
+<div style="width:30%; float:right; margin: 20px;"><img src="images/web/HTML5_Logo.png" class="full-width" />
+<h4 style="text-align: left; padding-left: 20px;">&nbsp;</h4>
+</div>
+
+<h3>What is HTML?</h3>
+<p><strong>HTML</strong> (<strong><em>H</em></strong><em>yper<strong>T</strong>ext <strong>M</strong>arkup<strong> L</strong>anguage</em>)  is a
+  markup language that uses a system of tags to dictate
+  how the content should be displayed within a web
+  browser.</p>
+<p><br>
+  <br>
+  A very basic  web page created using HTML would look like this:</p>
+<p data-height="300" data-theme-id="16667" data-slug-hash="adqpLE" data-default-tab="html" data-user="shoutmatt" class='codepen'>See the Pen <a href='http://codepen.io/shoutmatt/pen/adqpLE/'>Very Simple HTML Page</a> by Matthew Leach (<a href='http://codepen.io/shoutmatt'>@shoutmatt</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+ <a href="project/web/webpage.zip"><button class="primary center-block"><i class="fa fa-github big-icon"></i> Simple HTML page</button></a>
+ 
+</div>
+
+
+
+
+<span class="anchor" id="css"></span>
+<div class="title">
+<h2>CSS: Definition</h2>
+</div>
+<div class="lessons">
+<div style="width:30%; float:right; margin: 20px;"><img src="images/web/css3-logo.png" class="full-width" /></div>
+<h3>What is CSS?</h3>
+<p> CSS (<strong><em>C</em></strong><em>ascading
+  <strong>S</strong>tyle <strong>S</strong>heets</em>) is a computer language that was created to supplement HTML. CSS styles can be applied to an HTML page to
+  position text and images and dramatically change
+  the appearance of things like text formatting, link
+  effects, etc. They work hand-in-hand
+  to create a
+  professional web site.</p>
+<p>&nbsp;</p>
+<p>Check some of the unique things CSS can do for HTML:
+</p>
+<p><strong>1. Well Designed Page Layouts
+  </strong><br>
+</p>
+ <p data-height="500" data-theme-id="0" data-slug-hash="zdoAp" data-default-tab="result" data-user="BigPepper" class='codepen'>See the Pen <a href='http://codepen.io/shoutmatt/pen/zxRgoR/'>Hello Pepper Plane</a> by Julien Lepoivre (<a href='http://codepen.io/BigPepper'>@BigPepper</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script><br>
+<p><strong><br>
+  2. Media-Types
+  for Responsive Web Design</strong><br>
+  <em>For the example below, click the 'Edit on CodePen' link and resize your browser window to see the media query effect.</em></p>
+<br>
+<p data-height="500" data-theme-id="0" data-slug-hash="olqtz" data-default-tab="result" data-user="michaelquiapos" class='codepen'>See the Pen <a href='http://codepen.io/michaelquiapos/pen/olqtz/'>Adaptive Layouts with Media Queries</a> by Michael Quiapos (<a href='http://codepen.io/michaelquiapos'>@michaelquiapos</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p><strong><br>
+  3. Advanced  Techniques 
+  using <span class="codepen">CSS preprocessors</span></strong><br>
+</p>
+<p data-height="300" data-theme-id="0" data-slug-hash="YPZqvw" data-default-tab="result" data-user="natewiley" class='codepen'>See the Pen <a href='http://codepen.io/natewiley/pen/YPZqvw/'>Stars</a> by Nate Wiley (<a href='http://codepen.io/natewiley'>@natewiley</a>) on <a href='http://codepen.io'>CodePen</a>.
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+
+</div>
+
+
+
+
+<span class="anchor" id="relationship"></span>
+<div class="title">
+<h2>The Relationship: <br>
+  HTML &amp; CSS</h2>
+</div>
+<div class="lessons" style="margin-bottom:0;">
+
+
+  <p>Take some time here to review the HTML and CSS code in a simple working web page demo. If you have a code editor, you can download the web pages and review them on your own computer. The objective here is to train your brain to recognize HTML code and CSS code&#8212;You are not expected to write this code or build anything yourself at this point. </p>
+  
+  <ul class="callout callout-push" style="margin-bottom: 50px;">
+    <li>Look at the HTML code. Notice how text, images and links are created. </li>
+    <li>Look at the CSS code. Notice how things can be styled. </li>
+    <li>Look at how the CSS code is linked to the HTML page. </li>
+    <li>Compare the HTML/CSS pages from within your web editor with the code within the CodePen Example below. Take a moment to identify the differences.  </li>
+  </ul>
+  
+</div>  
+
+<div style="width: 1000px; display:block; margin: auto;">
+ <p data-height="600" data-theme-id="16667" data-slug-hash="BzjJaW" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/BzjJaW/">HTML/CSS Relationship on CodePen</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+<div class="lessons">
+
+ <a href="project/web/samples/one-night.zip"><button class="primary center-block"><i class="fa fa-download big-icon"></i>  One Night Web Page</button></a>
+
+<hr>
+<h3>Reminder: </h3>
+<p>This very well might be the first time your brain has seen HTML and CSS. If this code looks completely foreign to you, that is completely normal. &nbsp;You are essentially learning a foreign language.</p>
+<p>One tip is to print out this HTML and CSS code and look at it often as you start learning HTML and CSS. The more you review it, the quicker your brain will begin to get more comfortable with it.</p>
+<p><img src="images/web/printed-code.jpg" class="full-width glow" /></p>
+
+</div>
+
+
+
+
+
+
+<span class="anchor" id="editor"></span>
+<div class="title">
+  <h2>Introduction: Code Editor</h2>
+</div>
+<div class="lessons">
+  <p>Just like working with Microsoft Word is a useful application for creating text documents, there are specific applications to help you write code. Code editors are useful because they color coordinate the text to help the developer visually see the differences. </p>
+  <h3>Microsoft Word: Bad Code Editor</h3>
+  <p><img src="images/web/word.jpg" width="640" alt=""/></p>
+  <h3>GitHub Atom: Good Code Editor</h3>
+  <p><img src="images/web/atom.jpg" width="640" alt=""/></p>
+  <hr>
+  <h3>Question:</h3>
+  <p>Can you spot some of the visual differences that makes Atom a better code editor than Word?</p>
+  <hr>
+  <h3>Download Atom</h3>
+  <p>Of course, if you already have a code editor, you are welcome to use any editor you wish. If you don't please download and install the Atom code editor. </p>
+  <p><a href="https://atom.io/" target="_blank"><img src="images/web/atom-download.jpg" width="640" alt=""/></a></p>
+  <p><a href="https://atom.io/" target="_blank">&gt;&gt; Visit Atom.io</a></p>
+
+
+</div>
+
+
+
+
+
+<span class="anchor" id="coding"></span>
+<div class="title">
+  <h2>Working with a Code Editor</h2>
+</div>
+<div class="lessons">
+  <h3>Step #1: Open Atom</h3>
+  <p>Once you have the Atom software installed, open the software.</p>
+  <p><a href="https://atom.io/" target="_blank"><img src="images/web/atom-open.jpg" width="640" alt=""/></a></p>
+  <hr>
+  <h3>Step #2: Download Web Files  </h3>
+  <p>We are not building an entire web page from scratch, so start by downloading this .zip file, </p>
+ <a href="project/web/samples/one-night.zip"><button class="primary center-block"><i class="fa fa-download big-icon"></i>  One Night Web Page</button></a>
+
+  <p>Once you have the .zip file download, unzip the files. You should have a folder called &quot;one-night&quot; with all the web files you need within it. It can help at this point to move this folder onto your computer's desktop. </p>
+  <hr>
+  <h3>Step #3: Drag in the Project Folder</h3>
+  <p>When working with web pages within code editors, you aren't just working on a single page, but multiple pages&#8212;such as  each .html page and the .css page. Because of this, code editors tend to have a navigation along the left-hand side of the app that clearly lists all of the  files and folders associated with a web project. </p>
+  <p>With Atom open, drag the &quot;one-night&quot; folder over the left-hand side of the application. </p>
+  <p><a href="https://atom.io/" target="_blank"><img src="images/web/atom-folder.jpg" width="640" alt=""/></a></p>
+  <hr>
+  <h3>Step #4: Find the HTML page</h3>
+  <p>Once you release the folder, you'll see it populated as a navigation along the left-hand side of the app. Feel free to click onto the webpage.html to see the source code of that document. </p>
+  <p><a href="https://atom.io/" target="_blank"><img src="images/web/atom-nav.jpg" width="640" alt=""/></a></p>
+  <p><strong>Note:</strong> You may not see the .DS_Store file when you open this project, but if you are on the mac, there is one there. The .DS_Store is typically a hidden file  that is found on the Apple OS X operating system. The .<strong>DS_Store</strong> is a file that stores unique data about the files within the folder, such as the position of the icons and the background images to the folder. The name is just an abbreviation of Desktop Services Store. Weither you see it or not, feel free to ignore it. </p>
+  <hr>
+  <h3>Step #5: Take a Moment to Review Files</h3>
+  <p>Seeing all this code and the crazy colors can be a little overwhelming at first&#8212;don't stress, you'll soon find our how useful this is and easy you'll start writing and editing code without worring about the details. </p>
+  <p>Take a moment to review the following files: </p>
+  <ul class="callout callout-push">
+    <li>webpage.html</li>
+    <li>style.css</li>
+    <li>images folder</li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+<span class="anchor" id="practice"></span>
+<div class="title">
+  <h2>Practice Project</h2>
+</div>
+<div class="lessons">
+  <p>When you are ready, continue to the next lesson to learn how to  edit HTML and CSS to style a simple web page. Keep Atom open as you'll continue working on that One Night project so you can learn how to update it with your own images, text, colors, fonts, etc. </p>
+
+   <p class="center"><a href="2-web-project.html" class="button">Continue ></a></p>
+</div>
+
+
+
+
+<!--
+<span class="anchor" id="next"></span>
+<div class="title">
+<h2>Next Steps</h2>
+</div>
+<div class="lessons">
+  <p>If you are interested in learning more, we at Galvanize have a number of options to help you. </p>
+  <h3>Free Single Workshop</h3>
+  <p><img src="images/web/learn-to-code.jpg" width="640"  alt=""/></p>
+  <p>Have you ever thought about learning to code but weren't sure how to get started? If you would like to get a little more <em>free</em> information on this, you are welcome to come to the Learn to Code events&#8212;which are often hosting on all of the Galvanize campuses. This event will help you understand more on how you can get started in this field and meet others that are just as interested as you are. Each event will be led by an expert who will guide you in understanding these new concepts and how to get started with programming, whether as a career or as a hobby.  </p>
+  <h3>Paid 8-Week Workshop</h3>
+  <p><img src="images/web/zero-to-web-design.jpg" width="640"  alt=""/></p>
+  <p>Once you are ready to begin learning how to code web pages, consider taking Galvanize's Zero to Web Designer Workshop. This part-time 8-week workshop is   the perfect starting point for future designers &amp; developers interested in this building a career in this industry. The skills covered in this workshop will help those that wish to build HTML/CSS websites for themselves &amp; clients. Having a strong foundation with HTML/CSS can be very useful before joining the Full Stack program as well.</p>
+</div>
+-->
+
+<span class="anchor" id="quiz"></span>
+<?php include('footer.html');?>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Fundamentals</title>
+
+    <?php include('head.html');?>
+    
+    
+
+<body id="top">
+
+<div id="side-nav">
+  <div class="handle">
+        <button id="side-nav-toggle"><i class="fa fa-bookmark fa-lg"></i></button>
+      </div>
+   
+        <ul>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#setup">Document Setup</a></li>
+        <li><a href="#user">Get the user's choice</a></li>
+        <li><a href="#computer">Get the computer's choice</a></li>
+        <li><a href="#teach">Teach the computer rock, paper, scissors</a></li>
+        <li><a href="#compare">Compare the choices</a></li>
+        <li><a href="#advanced">Advanced Challenges</a></li>
+
+
+</ul>
+</div>
+
+
+
+<div class="hero">
+  <h2>Rock, Paper, Scissors </h2>
+  <p>Building our first JS app</p>
+</div>
+
+<!--
+<div class="bg-dark">
+<div class="container video">
+  <iframe allowfullscreen="" src="http://player.vimeo.com/video/110498128" frameborder="0" width="960" height="540"></iframe>
+</div>
+</div>-->
+
+
+
+<span class="anchor" id="demo"></span>
+<div class="title">
+  <h2>Demo</h2>
+</div>
+<div class="lessons">
+    <p>With the skills covered today, you'll create your own project: <br>
+     To Build a &ldquo;Rock, Paper, Scissors&rdquo; Application</p>
+     <p data-height="280" data-theme-id="16667" data-slug-hash="yOWadZ" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/yOWadZ/">Rock, Paper, Scissors</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+  <hr>
+  <h3>4 Steps To Building This App</h3>
+  <ol class="callout-push">
+    <li>Get the user's choice</li>
+    <li>Get the computer's choice</li>
+    <li>Teach the computer how to guess rock, paper, or scissors</li>
+    <li>Compare their choices and tell the user the result</li>
+  </ol>
+</div>
+
+
+<span class="anchor" id="setup"></span>
+<div class="title">
+  <h2>Document Setup</h2>
+</div>
+<div class="lessons">
+  <p>As we start building our first web page application, it is important to start with the necessary web files. For this project, we'll be working with these files: </p>
+  <ul class="callout-push">
+    <li>index.html</li>
+    <li>styles.css</li>
+    <li>images (folder)</li>
+    <li>rock-paper-scissors.js</li>
+  </ul>
+  <hr>
+  <h3>Download Framework </h3>
+  <p>Rather than starting from an empty page each project, most web developers work with frameworks that have all the necessary and common page structures already built so they can jump right into the production of their pages.  </p>
+  <p class="center"> <a class="button" href="project/framework.zip">Download Framework Here</a>  </p>
+  <p>Once you have the Framework downloaded, upzip the files and drag the entire framework folder into  your code editor so you have access to all of the files. </p>
+  <p><img src="images/js/atom-framework.jpg" width="640" alt=""/></p>
+  <hr>
+  <h3>Framework Files Review</h3>
+  <p>Take a moment to review: </p>
+  <ul class="callout-push">
+    <li>The index.html page
+      <ul>
+        <li>	All the head information</li>
+        <li>How the CSS is linked</li>
+        <li>How the JS is linked </li>
+      </ul>
+    </li>
+    <li>The styles.css page</li>
+    <li>The rock-paper-scissors.js page<br>
+    </li>
+  </ul>
+  <hr>
+  <h3>Web Page Customization</h3>
+  <p>Take a quick moment to add in a unique page title to the index.html page and a description for what this project is.  </p>
+  <pre class="brush: html;">&lt;meta name=&quot;description&quot; content=&quot;Flexing my Javascript skills using variables, functions, and conditions building a Rock, Paper, Scissors Game.&quot;&gt;
+  
+&lt;title&gt;Rock, Paper, Scissors Game&lt;/title&gt;</pre>
+<hr>
+<h3>Adding the HTML Elements </h3>
+<p>We are starting with a really simple web page presentation with just a title and a button the user will need to click onto. Of course, you can always improve the visual presentation of this game  later. </p>
+<p>Add this code within the body of your HTML page: </p>
+  <pre class="brush: html;">&lt;h1&gt;Play Rock, Paper, Scissors&lt;/h1&gt; 
+
+&lt;p&gt;&lt;button class=&quot;fancy-btn&quot; onclick=&quot;compare(userChoice, computerChoice);&quot;&gt;Compare&lt;/button&gt;&lt;/p&gt;</pre>
+  <p>This button is going to call a function that we still need to write called <em>compare</em>. We'll have to get the user's choice and the computer's choice first, but once we do, the user will be able to click this button to test who wins. </p>
+  <p>Feel free to save your document and view the index.html page within a web browser. It should look like this: </p>
+  <p><img src="images/js/html.jpg" width="640" alt=""/></p>
+  <hr>
+  <h3>Adding some CSS Styles </h3>
+  <p>The title and the button we have is ok, but a little CSS style can improve this presentation. Of course, you can always improve the visual presentation of this game  later. </p>
+  <p>Add this code within the CSS page: </p>
+  <pre class="brush: html;">h1,
+p {
+  text-align: center;
+}
+
+.fancy-btn {
+  background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+  background-color: #007dc1;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 30px;
+  border: 1px solid #124d77;
+  text-shadow: 0px 1px 0px #154682;
+  box-shadow: inset 0px 1px 0px 0px #54a3f7;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.fancy-btn:hover {
+  background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+}</pre>
+   <p>Feel free to save your documents and view the index.html page again within a web browser. It should look like this: </p>
+  <p><img src="images/js/css.jpg" width="640" alt=""/></p>
+<p>&nbsp;</p>
+</div>
+
+
+
+
+<span class="anchor" id="user"></span>
+<div class="title">
+  <h2>Get the user's choice</h2>
+</div>
+<div class="lessons">
+    <p>As we get started writing the actual code. The easiest way to get input from a user is using a prompt. </p>
+    <p><img src="images/js/prompt.jpg" width="460" alt=""/></p>
+    <p>A prompt is the pop-up box that allows a user to enter content. In this case, we need the users to select 'rock', 'paper', or 'scissors'.    </p>
+    <p>Add this code within the JavaScript File: </p>
+    <pre class="brush: html;">var userChoice = prompt("Do you choose rock, paper or scissors?");</pre>
+  
+    <p>This line creates a variable called userChoice and holds the value that the user will type into the prompt.</p>
+       <p>Feel free to save your documents and view the index.html page again within a web browser. It should look like this: </p>
+  <p><img src="images/js/js-prompt.jpg" width="640" alt=""/></p>
+    <hr>
+    <h3>Pros vs Cons: Prompts</h3>
+    <p><em>Question:</em> What are the pros vs cons of using a prompt to get user input?</p>
+    <br>
+</div>
+
+
+
+
+<span class="anchor" id="computer"></span>
+<div class="title">
+  <h2>Get the computer's choice</h2>
+</div>
+<div class="lessons">
+  <p>We can not simply ask the computer to make a choice between rock, paper, and scissors. But developers use basic math techniques to help them solve this problem. </p>
+  <p><strong>Math.random()</strong>: This function is built into JavaScript and will return a floating point number between 0 and 1 (such as .3234828378347423 or .8874863524387745). By default, it will find a number to 16 digits after the decimal point.  </p>
+  <pre class="brush: html;">var computerChoice = Math.random();</pre>
+  
+  <p>Here we are setting a variable named computerChoice to hold the result of Math.random().</p>
+  <hr>
+  
+  <h3>Random vs ...?</h3>
+  <p><em>Question</em>: How else can we get a random choice?</p>
+</div>
+
+
+
+
+<span class="anchor" id="teach"></span>
+<div class="title">
+  <h2>Teach the computer rock, paper, scissors</h2>
+</div>
+<div class="lessons">
+  <p>Working with a random number to help us determine the computers choice may seem a little strange at first, but since we have three choices (rock, paper, and scissors), we can create three segments between 0 and 1 (0 to .33, .34 to .66, and .67 to 1). Based on where the random number falls, we can assign a variable for each selection. </p>
+  <p>This is also where we need to use conditional logic to help us determine the result: </p>
+   <pre class="brush: html;">if (computerChoice &lt;= 0.33) {     
+  computerChoice = &quot;rock&quot;; 
+} else if (computerChoice &lt;= 0.66) {
+  computerChoice = &quot;paper&quot;;
+} else {
+  computerChoice = &quot;scissors&quot;; 
+}</pre>
+  <p>Based on the above conditions...</p>
+  <ul class="callout-push">
+    <li>If the number the computer selected is less than .33, then the computerChoice is updated from a random number to  the string 'rock'. </li>
+    <li>Else/If the number the computer selected is less than .66, then the computerChoice is updated  to  the string 'paper'.</li>
+    <li>Else if the number doesn't meet the other two conditions,then the computerChoice is updated  to  the string 'scissors'.</li>
+  </ul>
+  <hr>
+  <h3>Understanding the Conditions</h3>
+  <p><em>Question</em>s: </p>
+  <ul class="callout-push">
+    <li>Why didn't we have to create conditions between: 0 to .33, .34 to .66, and .67 to 1? <br>
+      </li>
+    <li>Could we have written conditions to meet the above scenario? <br>
+      </li>
+    <li>How else could we have written these conditions? </li>
+    <li>Can we test our web pages yet and see anything?</li>
+  </ul>
+
+</div>
+
+
+
+
+
+
+
+<span class="anchor" id="compare"></span>
+<div class="title">
+  <h2>Compare the choices</h2>
+</div>
+<div class="lessons">
+  <p>Now, we get to not only compare the user's choice with the computer's choice, but we'll alert the user in a pop-up if they won, lost, or tied using more conditions. </p>
+  <p>We are creating a function called compare that will run our conditions. But we also need to pass in both the user's choice and the computers choice.</p>
+  <p>We are also providing you two challenge options. The first option gives you part of the code to help you get started and you need to figure out the rest, or we'll make it easy and give you the rest of the code. Your choice!</p>
+  <hr>
+  <h3>Option 1: Compare Function (You Need to Complete):</h3>
+  <pre class="brush: html;">
+var compare = function(userChoice, computerChoice) {
+  if (userChoice === computerChoice) {
+    window.alert("The result is a tie!");
+  } else if (userChoice === "rock") {
+    if (computerChoice === "scissors") {
+      window.alert("You Win! Rock beats Scissors.");
+    } else {
+      window.alert("You Lose! Paper beats Rock.");
+    }
+   } else if (   ) {
+   
+   
+   }
+</pre>
+
+
+  <hr>
+  <h3>Option 2: Compare Function (100% Completed for you):</h3>
+  <p>  Try and challenge yourself as the completed code is provided below. 
+  </p>
+  <a class="show_hide_hint read-more-trigger" href="#" rel="#slidingDiv_1">↓ Display Completed Code</a>
+    
+  
+  <div id="slidingDiv_1" style="display: none;">
+
+<pre class="brush: html;">
+var compare = function(userChoice, computerChoice) {
+  if (userChoice === computerChoice) {
+    window.alert("The result is a tie!");
+  } else if (userChoice === "rock") {
+    if (computerChoice === "scissors") {
+      window.alert("You Win! Rock beats Scissors.");
+    } else {
+      window.alert("You Lose! Paper beats Rock.");
+    }
+  } else if (userChoice === "paper") {
+    if (computerChoice === "rock") {
+      window.alert("You Win! Paper beats Rock.");
+    } else {
+      window.alert("You Lose! Scissors beats Paper.");
+    }
+  } else if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+      window.alert("You Win! Scissors beats Rock.");
+    } else {
+      window.alert("You Lose! Rock beats Scissors.");
+    }
+  }
+};
+       
+       </pre>
+  </div>
+
+<hr>
+
+<h3>Test</h3>
+<p>At this point, you should be able to save your files and test your HTML page within a web browser. </p>
+<ul>
+  <li>When you first open the web page, you'll be prompted to choose  rock, paper, or scissors. </li>
+  <li>The JavaScript code has already determine the computer's choice for rock, paper, or scissors.</li>
+  <li>Then, when you click the Compare button, the JavaScript will compare your choice with the computers and alert you to the result. </li>
+  <li>If you wish to play again, you'll need to refresh the web page or hit (Command + R) if you are on a Mac using Chrome. </li>
+</ul>
+
+<hr>
+
+<h3>&nbsp;</h3>
+<p><img src="images/js/congrats.jpg" width="640" alt=""/></p>
+<p class="center">You did it! You are now a JavaScript Coder! </p>
+</div>
+
+
+
+
+<span class="anchor" id="advanced"></span>
+<div class="title">
+  <h2>Advanced Challenges</h2>
+</div>
+<div class="lessons">
+  <h3>Playing in the sandbox!  </h3>
+  <p>Chances are, you can see some areas for improvement in this simple game. There are certainly some things using the code you know that can enhance this game. </p>
+  <p>Consider these options: </p>
+  <ul class="callout-push">
+    <li>"I want to play the game again. Make a button I can press to play again!"</li>
+    <li>"When I win, I want the game to congratulate me by my name!"</li>
+    <li>"I don't ever want to lose. Make it so I always win."</li>
+  </ul>
+<hr>
+
+
+
+
+  <h3>Inspiration</h3>
+  <p>If you wish to know how other developers have taken this same game and built their own, take a look at these examples below. </p>
+ <p data-height="410" data-theme-id="16667" data-slug-hash="WwBVbR" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/WwBVbR/">Rock, Paper, Scissors, Lizard, Spock</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>. <script async src="//assets.codepen.io/assets/embed/ei.js"></script></p>
+ <hr>
+ 
+
+
+<p data-height="380" data-theme-id="16667" data-slug-hash="eZaqmV" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/eZaqmV/">Rock, paper, scissors - Terminal edition</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<p data-height="738" data-theme-id="16667" data-slug-hash="ZWNgbr" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/ZWNgbr/">Rock, Paper, Scissors</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+<hr>
+
+<p data-height="653" data-theme-id="16667" data-slug-hash="mPYNJd" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/mPYNJd/">Rock Paper Scissors Lizard Spock</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+ 
+  <hr>
+  <h3>What's Next</h3>
+  <p>Most of these examples above use jQuery for capturing the user's choice with the buttons as well as displaying the outcomes within the web page. The CSS is a little more advanced as it is using SCSS, which is a version of Sass (Syntactically Awesome Style Sheets). Sass allows variables, nested rules, mixins, etc to be used to enhanse the power of CSS. </p>
+  <p>Interested in learning more? </p>
+  <p class="center"><a href="3-next-steps.html" class="button">Continue ></a></p>
+  <p>&nbsp;</p>
+</div>
+
+
+
+
+<?php include('footer.html');?>
+
+</body>
+</html>

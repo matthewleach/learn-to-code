@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>JavaScript Fundamentals</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
+
+<style>
+.sudoCode pre {
+  font-size: 32px;
+  font-family:'Coming Soon';
+  text-align: center;
+  background: #eee;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+</style>
+
+
+    <?php include('head.html');?>
+    
+   
+
+
+<body id="top">
+
+<div id="side-nav">
+  <div class="handle">
+        <button id="side-nav-toggle"><i class="fa fa-bookmark fa-lg"></i></button>
+  </div>
+   
+        <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#value">The Value of GitHub</a></li>
+        <li><a href="#flow">GitHub Flow</a></li>
+        <li><a href="#terms">Additional GitHub Terms</a></li>
+        <li><a href="#practice">Practice Project</a></li>
+
+        
+
+</ul>
+</div>
+
+
+
+<div class="hero">
+  <h2>Introduction to GitHub</h2>
+  <p>The Power of  Verson Control</p>
+</div>
+
+<span class="anchor" id="overview"></span>
+<div class="title">
+  <h2>Overview</h2>
+</div>
+<div class="lessons">
+     <p>In these lessons, we'll be going over the following:</p>
+  <ul class="callout callout-push">
+       <li>What is GitHub?</li>
+       <li>How can GitHub help me?</li>
+     </ul>
+     <p>Once you understand  GitHub a bit better, you'll be provided sample files to to practice working with GitHub on your own.</p>
+     <p><img src="images/git/github.jpg" width="640" alt=""/></p>
+     <hr>
+     <p>GitHub's is free for posting your files publically and you can keep your files private if you pay a monthly fee ($7/month). A lot of people that are new to this industry feel protective of their files and want to keep them to themselves. But in nearly all cases, there is little you are doing now that can't easily be recreated by other professionals and there are always other ways of stealing your code if necessary. Try not to get too wrapped up with this. </p>
+</div>
+
+
+
+
+
+
+
+<span class="anchor" id="value"></span>
+<div class="title">
+  <h2>The Value of GitHub</h2>
+</div>
+<div class="lessons">
+  <p>Nearly all web programmers today use GitHub, or a similar application, to help them do three things well:  </p>
+  
+  <div style="width: 31%; float: left; margin-right: 2%">
+ <h3 class="center"><i class="fa fa-code-fork fa-3x center" aria-hidden="true" ></i>
+  <br><br> <strong>Version Control</strong></h3>
+  <p>Every edit of the project is saved so you can go back and track changes.</p>
+  </div>
+  
+  <div style="width: 31%; float: left; margin-right: 2%">
+    <h3 class="center"><i class="fa fa-lock fa-3x center" aria-hidden="true" ></i>
+   <br><br> One Safe Place</h3>
+  <p>When working on more than one computer, this creates one location for all the files to be for easy editings. </p>
+  </div>
+  
+  <div style="width: 31%; float: left; margin-right: 2%">
+    <h3 class="center"><i class="fa fa-users fa-3x center" aria-hidden="true" ></i>
+   <br><br>
+  <strong>Collaboration</strong></h3>
+  <p>When working with others, having a method you can both edit the same set of files it absolutely necessary. </p>
+  </div>
+  
+ <div style="clear: both;"></div>
+ 
+<hr>
+
+
+<h3>Important Terms</h3>
+<p>Common works related to this subject that may be new for you: </p>
+<ul class="callout-push">
+  <li>
+    <p><strong>Git</strong> — The open-source system used for version control. Created by <a href="https://www.google.com/search?q=Linus+Trovalds&oq=Linus+Trovalds" target="_blank">Linus Trovalds</a> in 2005, who also  created Linux.</p>
+  </li>
+  <li>
+    <p><strong>GitHub</strong> — A company that created an easy way to manage Git and the name of their software.</p>
+  </li>
+  <li>
+    <p><strong>GitHub.com</strong> — The website where users can view all code projects online.</p>
+  </li>
+  <li>
+    <p><strong>GitHub Desktop</strong> — An application that is installed on your computer which is the easiest way to post code to GitHub.com.  </p></li>
+   <li> <p><strong>Repository</strong>  — Is the project's folder and all the files, documentation, and versions saved. </p>
+  </li>
+  <li>
+    <p><strong>Repo</strong>  — Short for repository<br>
+      </p>
+  </li>
+    <li>
+      <p><strong>Commit</strong>  — Fancy term used referring to saving the latest changes to a new version. </p>
+    </li>
+</ul>
+Don't worry if any (or all) of these terms sound confusing and like a completely different language. With a little practice, you'll find yourself quickly using these terms  and you'll soon start sounding like a true web professional.. 
+</div>
+
+
+
+
+<span class="anchor" id="flow"></span>
+<div class="title">
+  <h2> GitHub Flow</h2>
+</div>
+<div class="lessons">
+
+  <p>Before having you jump into GitHub, here is an overview of the development process to help you understand how all of this works.</p>
+  <hr>
+  <h3>Jenny's Story </h3>
+  <p>Jenny has been learning  HTML &amp; CSS to create her first web page.  As the web site has been growing, she now wants to share it online. If she shares her files on GitHub, not only can she share her files on the web, but every change she submits online is saved in case she needs to go back and reference older code. <br>
+  </p>
+  <hr>
+  <h3>Managing  Files on GitHub</h3>
+  <p>There are two ways that Jenny can manage her files on GitHub.</p>
+  <ul class="callout-push">
+    <li><strong>GitHub Desktop</strong></li>
+    <li><strong>Terminal </strong></li>
+  </ul>
+  <h3>GitHub Desktop</h3>
+  <p>The easier way to get started working with GitHub is to download the free app which monitors any changes to the web files to allow web developers an easy technique to update all new changes to the website. </p>
+  <h3>Terminal</h3>
+  <p>The Terminal is a free program (already installed on Macs) that allows web developers a way to type and execute text based commands instead of using graphical interfaces. Although this method is more complicated to to initally learn, most professional web developers use this method because it is much faster to accomplish certain tasks. </p>
+  <p>For now, Jenny is using GitHub Desktop to manage her files because it is easier to start with. Once she is comfortable with the basics, she'll push herself to use Terminal. </p>
+  <hr>
+  <h3>Posting your First Repo </h3>
+  <p>Later in the lessons, you'll get the opprotunity to download a sample web site and upload it to your own GitHub account using GitHub Desktop. </p>
+  <p>Once  Jenny has published her first repository, she has it in two places:</p>
+  <ul class="callout-push">
+    <li>
+      <p><strong>Local repository on your computer</strong> — Jenny can work on this repository without an Internet connection using GitHub Desktop. As she gets to certain steps in your project development, she can commit (save) here changes onto GitHub.com</p>
+    </li>
+    <li>
+      <p><strong>Remote repository on GitHub.com</strong> — Her project will be stored online so she can access it from any other computer or even  send friends links to her repository on GitHub.com so they can see her code and make new reversions with changes that she can review. </p>
+    </li>
+  </ul>
+  <p>Here is a copy of Jenny's first repo: <a href="https://github.com/jennygalvanize/Pizza" target="_blank">https://github.com/jennygalvanize/Pizza</a></p>
+  <p>Here is the URL of the web page itself:  <a href="https://jennygalvanize.github.io/pizza/" target="_blank">https://jennygalvanize.github.io/pizza/</a></p>
+  <hr>
+  <h3>Committing New Changes</h3>
+  <p>As Jenny continues to make updates to the local files on her computer, she can continue to commit these changes to her online repo. </p>
+  <hr>
+  <h3>Keeping Files Safe</h3>
+  <p>If for any reason her work computer failed, she simply can download her entire project back to any computer.</p>
+</div>
+  
+  
+  
+
+<span class="anchor" id="terms"></span>
+<div class="title">
+  <h2>Additional GitHub Terms</h2>
+</div>
+<div class="lessons">
+  
+  <p>GitHub is not just for personal management of files, but allows great access when working with teams of people, or even building off projects from people you don't even know. </p>
+  <p>Here is some new tech terms that relate to advanced techniques you can use GitHub for.  </p>
+  <ul class="callout-push">
+    <li><strong>Cloning  —</strong> When you clone another web developer's project, you are create a direct copy of that  repo. This allows edit those files and  later combine those changes back with the main project. This is a great way that multiple people can work on the same project and monitor each others changes. </li>
+    <li><strong>Forking </strong><strong>—</strong> When you fork another web developer's project, you are creating a brand new repo that is taking the project in a new direction that does not have plans to meet up and be merged. This can be useful when you use a template or another starting point with plans to take the project in your own direction.</li>
+  </ul>
+</div>
+
+  
+  
+
+
+<span class="anchor" id="practice"></span>
+<div class="title">
+  <h2>Practice Project</h2>
+</div>
+<div class="lessons">
+  <p>When you are ready to practice working with GitHub on your own, continue to the next lesson to learn how to  manage a simple web project on your own GitHub account.</p>
+
+   <p class="center"><a href="2-git-project.html" class="button">Continue ></a></p>
+</div>
+  
+  
+  
+<p>
+  <?php include('footer.html');?> 
+</p>
+
+</body>
+</html>

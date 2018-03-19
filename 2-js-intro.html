@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>JavaScript Fundamentals</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
+
+<style>
+.sudoCode pre {
+  font-size: 32px;
+  font-family:'Coming Soon';
+  text-align: center;
+  background: #eee;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+</style>
+
+
+    <?php include('head.html');?>
+    
+   
+
+
+<body id="top">
+
+<div id="side-nav">
+  <div class="handle">
+        <button id="side-nav-toggle"><i class="fa fa-bookmark fa-lg"></i></button>
+  </div>
+   
+        <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#javascript">What is JavaScript</a></li>
+        <li><a href="#syntax">JavaScript Syntax</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#conditional">Conditional Statements</a></li>
+        <li><a href="#practice">Practice Project</a></li>
+
+        
+
+</ul>
+</div>
+
+
+
+<div class="hero">
+  <h2>Introduction to JavaScript</h2>
+  <p>Getting Comfortable with the Basics</p>
+</div>
+
+<!--
+<div class="bg-dark">
+<div class="container video">
+  <iframe allowfullscreen="" src="http://player.vimeo.com/video/110498128" frameborder="0" width="960" height="540"></iframe>
+</div>
+</div>-->
+
+
+
+<span class="anchor" id="overview"></span>
+<div class="title">
+  <h2>Overview</h2>
+</div>
+<div class="lessons">
+     <p>In this course, we'll be going over the following:</p>
+     <ul class="callout callout-push">
+       <li>Basic syntax of JavaScript</li>
+       <li>Variables </li>
+       <li> Functions</li>
+       <li>Conditional Statements</li>
+     </ul>
+  <p>Don't worry if you don't know these terms yet, you will in this lesson. </p>
+  <p>While not required, reviewing our previous Learn to Code: HTML &amp; CSS course can help!</p>
+     <hr>
+     <h3>Project Demo</h3>
+     <p>With the skills covered in this lesson, you'll learn to build a<br>
+     &ldquo;Rock, Paper, Scissors&rdquo; Application</p>
+     <p data-height="280" data-theme-id="16667" data-slug-hash="yOWadZ" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/yOWadZ/">Rock, Paper, Scissors</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+
+<span class="anchor" id="javascript"></span>
+<div class="title">
+  <h2>What is JavaScript</h2>
+</div>
+<div class="lessons">
+  <p>Making its first appearance in 1995, JavaScript was created by an engineer at Netscape to provide a user-friendly, lightweight programming language that can be easily adapted for the rise of the Internet. Now, with HTML and CSS, it is one of the core languages of the Internet and is growing quickly to accommodate beyond the client-side.</p>
+  <p>JavaScript is powerful enough to: </p>
+  <ul class="callout-push">
+    <li>create interactivity on webpages</li>
+    <li>web based games</li>
+    <li>edit PDF files (such as inserting the date into the document when the file is opened) </li>
+    <li> even manipulate SVG image files with amazing animations </li>
+  </ul>
+  <p>JavaScript allows web pages to do more than just &ldquo;sit there." You can animate, calculate, etc. - you can do it all! It is a great programming bridge between &ldquo;design&rdquo; and &ldquo;development&rdquo; that allows for endless creativity.  </p>
+  <p><img src="images/js/js-is-not-java.jpg" width="640"  alt=""/></p>
+  <p>Common confusion: JavaScript is <strong>NOT</strong> Java </p>
+  <p>They are largely different programming languages and should not be confused with one another.</p>
+ <hr>
+ <h3>A Few JS Examples</h3>
+ <p><strong>Simple Game</strong></p>
+<p data-height="696" data-theme-id="16667" data-slug-hash="RRbvNw" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/RRbvNw/">The Color Guessing Game</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<p>
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script> 
+  <strong>Complex Game</strong></p>
+<p><a href="http://www.mapstd.com/" target="_blank"><img src="images/js/game-map.jpg" width="640" alt=""/></a></p>
+
+
+<p><strong>Navigation Interactivity</strong></p>
+<p data-height="340" data-theme-id="16667" data-slug-hash="YWzPZO" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/YWzPZO/">Dropdown Component</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<p><strong>Fancy Animation</strong></p>
+<p data-height="299" data-theme-id="16667" data-slug-hash="dXbaoE" data-default-tab="result" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/dXbaoE/">Birds of a Feather</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</p>
+<hr>
+  <h3>A Quick Mini-Tutorial</h3>
+  <p>In order to go over some basic JavaScript concepts, let's follow a tutorial provided by the JavaScript.com team.</p>
+  <p>It's only 8 lessons and takes less than 5 minutes.</p>
+  <p ><a href="https://www.javascript.com/try" target="_blank"><img src="images/js/try-js.jpg" width="640" alt=""/></a></p>
+  <h5 class="right"><a href="https://www.javascript.com/try">https://www.javascript.com/try</a></h5>
+  <p>&nbsp;</p>
+</div>
+
+
+
+
+<span class="anchor" id="syntax"></span>
+<div class="title">
+  <h2>JavaScript Syntax</h2>
+</div>
+<div class="lessons">
+  <h3>Syntax?</h3>
+  <p>Syntax is just a fancy reference to the arrangement of the code within the editors.</p>
+  
+  <p data-height="450" data-theme-id="16667" data-slug-hash="PqvXLW" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/PqvXLW/">Date</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+  
+  
+  <p><strong>Basic syntax of JavaScript:</strong></p>
+  <ul class="callout-push">
+    <li>var - defines a variable (an object of some value)</li>
+    <li>; - terminator, commonly found at the end of a code operation</li>
+    <li>"word" - quotes create strings, which are a form of data</li>
+    <li>function() - performs some action or method</li>
+    <li>{} - block notation, contains code that can be initialized by a function</li>
+    <li>. - dot notation, allows for the chaining of variables and functions  </li>
+  </ul>
+  <p>&nbsp;</p>
+  <p class="center"><img src="images/js/stress.jpg" width="400" alt=""/></p>
+</div>
+ 
+ 
+ 
+<span class="anchor" id="variables"></span>
+<div class="title">
+  <h2>Variables</h2>
+</div>
+<div class="lessons">
+  <p>A variable is a symbolic name that is used to represent information.</p>
+  <hr>
+  <h3>Variables of your Past</h3>
+  <div class="sudoCode">
+  <pre>
+x = 1
+y = 2
+z = x + y; 
+
+What is z?? 
+</pre>
+  </div>
+  <p>Looking at the formula above, you may remember how you used to use letters to store numbers. The problem is that x, y, and z don't mean a whole lot at this moment. Using descriptive words for the variables make this easier.  </p>
+  <hr>
+  <h3>Variables in Code</h3>
+  <div class="sudoCode">
+  <pre>
+men = 10
+women = 20
+totalPeople = men + women
+
+What is totalPeople??
+</pre></div>
+  <p>As you can see, the variables for men, women, and totalPeople are much more useful in knowing what kind of data we are working with. </p>
+  <p>When the JavaScript is written into a code editor, it is important to follow the proper syntax rules. </p>
+<p data-height="190" data-theme-id="16667" data-slug-hash="regWYO" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/regWYO/">JS - Var with Variable (LTC)</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+  <hr>
+  <h3>Numbers &amp; Strings</h3>
+  <p>Variables can store a variety of data types and these two are the most common:</p>
+<p data-height="200" data-theme-id="16667" data-slug-hash="JXqZrb" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/JXqZrb/">LTC - Variables </a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+
+<span class="anchor" id="functions"></span>
+<div class="title">
+  <h2>Functions</h2>
+</div>
+<div class="lessons">
+  <p>Functions are blocks of code that perform tasks for us.</p>
+  <p>In JavaScript, you follow the general syntax: </p>
+  <ol class="callout-push">
+    <li>Declare, <br>
+    </li>
+    <li>Define, <br>
+      </li>
+    <li>Call (invoke).</li>
+  </ol>
+  <p>Syntax:</p>
+ 
+<p data-height="225" data-theme-id="16667" data-slug-hash="LNoBRd" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/LNoBRd/">LTC - Basic Function</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+ 
+  <p>~What is the value produced by this function?</p>
+<hr>
+  <h3>More  syntax:</h3>
+  <ul class="callout-push">
+    <li><strong>Parameters</strong> - (a,b) - hypothetically what passes through the function</li>
+    <li><strong>Arguments</strong> - real values of the parameters the function affects</li>
+    <li><strong>Block</strong> - {...} - the function&rsquo;s operational code</li>
+    <li><strong>Return</strong> command - the output of the function
+  <br>
+    </li>
+  </ul>
+</div>
+
+
+<span class="anchor" id="conditional"></span>
+<div class="title">
+  <h2>Conditional Statements</h2>
+</div>
+<div class="lessons">
+  <p class="center">Remember <a href="https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure">Choose Your Own Adventure</a> books?</p>
+  <p class="center"><img src="images/js/choose-adventure-book.jpg" width="300" alt=""/></p>
+  <p>Conditional statements work a lot like the Choose Your Own Adventure books and follow the basic format: <em>if</em>, <em>else</em>, <em>else if</em>...</p>
+  <hr>
+  <h3>If Statements</h3>
+  <p><strong>if</strong> - If what&rsquo;s in the parameters is True, then a block of code will run. If it&rsquo;s False, the code will not run.</p>
+ 
+  <p data-height="250" data-theme-id="16667" data-slug-hash="PNvEpb" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/PNvEpb/">LTC - If</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<hr>
+  <h3>Else Statements</h3>
+  <p><strong>else</strong> - what if you wanted the code to do something else besides nothing if it&rsquo;s False?</p>
+
+  <p data-height="285" data-theme-id="16667" data-slug-hash="wGbpJd" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/wGbpJd/">LTC - If/Else</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+ 
+  <hr>
+  <h3>Else if Statements</h3>
+  <p><strong>else if</strong> - What if another scenario comes up?</p>
+  <p>Add an else if in between the if and else statements.</p>
+
+  <p data-height="300" data-theme-id="16667" data-slug-hash="MydrpX" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/MydrpX/">LTC - If/Else/IfElse</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+ 
+ 
+ <!--
+  <p><em>This code is actually broken. Can you figure out why?</em></p>
+   <a class="show_hide_hint read-more-trigger" href="#" rel="#slidingDiv_1">↓ Hint</a>
+  <div id="slidingDiv_1" style="display: none;">
+<p>When working with conditions, it is important to understand how to structure them so that all conditions are met. Looking at the example above, consider setting the variable <strong>hour</strong> to 2, 12, and 22 and test for each. One of those values will not meet the desired result.</p>
+<p>Which one is it? <br>
+Can you fix the conditions so they all work properly?
+</p>
+  </div>
+    <a class="show_hide_hint read-more-trigger" href="#" rel="#slidingDiv_2">↓ Solution</a>
+  <div id="slidingDiv_2" style="display: none;">
+<p>One potential solution is: </p>
+<pre class="brush: html;">
+var hour = 2;
+
+if (hour < 9)  {
+  greeting = "OK day";
+}  else if (hour <18)  {
+  greeting = "Good day";
+} else {
+  greeting = "Go away.";
+}
+
+console.log(greeting);
+
+</pre>
+  </div>
+  
+  -->
+  <hr>
+  <h3>Recap of Conditional Rules</h3>
+  <ul class="callout-push">
+    <li><strong>If</strong> statements perform an action if the statement is True</li>
+    <li><strong>Else</strong> statements perform an action if the statement is False</li>
+    <li><strong>Else if</strong> statements perform an action if the first is False but the second is True <em>Is there any other way to do this?</em></li>
+  </ul>
+  <hr>
+    <h3 class="center">= vs == vs ===  </h3>
+  <p>&nbsp;</p>
+  <p>  <strong>= :  assignment operator</strong></strong><br>
+  It sets variables equal to a specific value.</p>
+  
+<p data-height="160" data-theme-id="16667" data-slug-hash="RamBWe" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/RamBWe/">LTC  =</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.
+  <script async src="//assets.codepen.io/assets/embed/ei.js"></script></p>
+<hr>
+<p><strong>== :  abstract equality comparison</strong><br>
+  </strong>It compares two items to see if they are of equal value, but it ignores if they are the same exact <em>type</em> of data.</p>
+</p>
+<p data-height="390" data-theme-id="16667" data-slug-hash="zqQLrw" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/zqQLrw/">LTC  ==</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+ <hr>
+  <p><strong>=== :  strict equality comparison<br>
+  </strong>It compares the value &amp; type of the items to see if they are exactly the same. In the case of null vs undefined, null is more specifically typed than undefined, so they are not exactly the same value. It is recommended to use === over == as much as possible. </p>
+<p data-height="390" data-theme-id="16667" data-slug-hash="xVNJVP" data-default-tab="js" data-user="shoutmatt" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/shoutmatt/pen/xVNJVP/">LTC  ===</a> by Matthew Leach (<a href="http://codepen.io/shoutmatt">@shoutmatt</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+
+
+
+<span class="anchor" id="practice"></span>
+<div class="title">
+  <h2>Practice Project</h2>
+</div>
+<div class="lessons">
+  <p>When you are ready, continue to the next lesson to learn how to  build your very own Rock, Paper, Scissors Game. </p>
+
+   <p class="center"><a href="2-js-project.html" class="button">Continue ></a></p>
+</div>
+
+
+
+<?php include('footer.html');?>
+
+</body>
+</html>

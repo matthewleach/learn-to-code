@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML & CSS Overview | Galvanize</title>
+
+    <?php include('head.html');?>
+
+
+
+<body id="top">
+
+<div id="side-nav">
+  <div class="handle">
+        <button id="side-nav-toggle"><i class="fa fa-bookmark fa-lg"></i></button>
+  </div>
+   
+        <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#started">Getting Started</a></li>
+        <li><a href="#html">HTML Edits</a></li>
+        <li><a href="#css">CSS Edits</a></li>
+        <li><a href="#explore">Exploring Further</a></li>
+        <li><a href="#next">Next Steps</a></li>
+
+</ul>
+</div>
+
+
+
+<div class="hero">
+  <h2>Project: HTML &amp; CSS</h2>
+  <p>Creating a Motivation Web Page</p>
+</div>
+
+
+
+
+
+<span class="anchor" id="overview"></span>
+<div class="title">
+  <h2>Overview</h2>
+</div>
+<div class="lessons">
+ <p>This   project will help you create your own motivational poster. </p>
+ <p><a href="https://unsplash.com/" target="_blank"><img src="images/web/sample-one-night.jpg" width="640" alt=""/></a></p>
+ <p>You'll be editing the existing page from the lessons by making the following edits: </p>
+ <div style="width: 50%; float: left;">
+  <p><strong>HTML Edits: </strong></p>
+  <ul class="callout-push">
+    <li>Document Title</li>
+    <li>Heading</li>
+    <li>Paragraph</li>
+    <li>Image</li>
+  </ul>
+  </div>
+  <div style="width: 45%; float: left;">
+  <p><strong>CSS Edits: </strong></p>
+  <ul class="callout-push">
+    <li>Background Colors</li>
+    <li>Text Colors</li>
+    <li>Text Size</li>
+    <li>Text Font</li>
+  </ul>
+  </div>
+  <div style="clear: left;"></div>
+  <hr>
+  <h3>Other Examples</h3>
+  <p><a href="project/web/samples/waterfall/webpage.html" target="_blank"><img src="images/web/sample2.jpg" width="640" alt=""/></a></p>
+  <p><a href="project/web/samples/shore/webpage.html" target="_blank"><img src="images/web/sample1.jpg" width="640" alt=""/></a></p>
+  <p><a href="project/web/samples/camera/webpage.html" target="_blank"><img src="images/web/sample3.jpg" width="640" alt=""/></a></p>
+</div>
+
+
+<span class="anchor" id="started"></span>
+<div class="title">
+  <h2>Getting Started</h2>
+</div>
+<div class="lessons">
+
+  <p>In the <a href="2_html_css_intro.html">previous lecture</a>, you installed a code editor and learned how to open a project folder within in. If needed, you can download the <a href="project/web/samples/one-night.zip">Sample Project</a> here. You'll be using this sample project to get you started. </p>
+  <p class="center"><a href="project/web/samples/one-night.zip" target="_blank"><img src="images/web/sample-one-night.jpg" width="350" alt=""/></a></p>
+  <p>Although this is a pretty slick sample, but you'll be able to create your own by following the steps below!</p>
+</div>
+
+
+<span class="anchor" id="html"></span>
+<div class="title">
+  <h2> HTML Edits</h2>
+</div>
+<div class="lessons">
+
+  <p>When looking at the HTML within the <em><strong>webpage.html</strong></em> file, take a moment to review the structure of the document. </p>
+  <p style="width: 80%; padding-left: 10%; font-weight:bold;" class="center"> <em>Can you identify the  HTML code that creates the containers, the image, and the text on this page?</em>  </p>
+  <hr>
+  <p>In this project, you'll change the text and photo to this page following the steps below. </p>
+<h3>Step #1: Find New Photo</h3>
+  <p>Of course, you can use any photo you wish, but it can be fun to use any of these free, high-quality images in your project from <a href="https://unsplash.com/" target="_blank">UnSplash.com</a>. Visit UnSplash and download any  image that you think could make a goofy/serious motivational image. Click onto any image and there is a <em>download</em> button in the upper-right hand corner of each image. Save this image to your computer. </p>
+  <p><a href="https://unsplash.com/" target="_blank"><img src="images/web/unsplash.jpg" width="640" alt=""/></a></p>
+  <hr>
+  <h3>Step #2: Rename the New Photo</h3>
+  <p>Find this new image, it most likely is in your Downloads Folder. Rename this file to something that follows these rules: </p>
+  
+  
+  <div style="width: 55%; float: left; padding-right: 5%;">
+
+ <p><strong>Rules: </strong></p>
+   <ul>
+    <li>Is relatively short, yet descriptive. </li>
+    <li>Is all lowercase. </li>
+    <li>Has not spaces between possible words. </li>
+  </ul>
+  </div>
+  <div style="width: 25%; float: left;">
+ <p><strong>Examples: </strong></p>
+    <ul>
+    <li>nightsky.jpg</li>
+    <li>mountains.jpg </li>
+    <li>waterfall.jpg</li>
+  </ul>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div style="width: 5%; float: left;">
+    <p><img src="images/web/image-filename.jpg" width="111" height="96" alt=""/></p>
+</div>
+
+  
+  
+  
+ 
+ 
+  
+    
+    
+      <div style="clear: left;"></div>
+      
+      
+  <hr>
+  <h3>Step #3: Proper File Organization</h3>
+  <p>When working with web images, it is important that you place them together. Hopefully, you moved your project folder onto the Desktop from the Lecture, if not, you can do that now. When you find your project folder, move the newly renamed image and drop it into the <em><strong>images</strong></em> folder of your project (within the same folder as the nightsky.jpg). </p>
+  <p class="center"><img src="images/web/file-organization.jpg" width="194" height="90" style="border: 1px solid #000;" alt=""/></p>
+  <hr>
+  <h3>Step #4: Update the Page Heading</h3>
+  <p>Before we update the image, let's update the HTML heading first. Locate the &lt;h1&gt;One Night&lt;/h1&gt; code first. Between the H1 tags, change the words <em>One Night</em> to a heading that matches the appropriateness of your new photo.</p>
+  <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+  <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+  <strong><br>
+  Then Save, Refresh, &amp; Test the Page</strong></p>
+ 
+  <p>Since we just made a change to the HTML, it is important that you save your changes, and refresh the web browser to view your changes. You should see the new heading. If not, make sure you updated the code correctly and saved the HTML page.</p>
+  <p>It is common practice that every change you make to the code is then tested within the browser to see if the effect was written properly. </p>
+  <hr>
+  <h3>Step #5: Update the Page Paragraph</h3>
+  <p>Within the &lt;p&gt; ... &lt;/p&gt; tags, take a moment to write a brief description on the subject in the photo. The content you add into this paragraph can be serious, funny, or anything you wish. Of course, if you wish, you can create 2 or even 3 short paragraphs, but be careful not to write too much as it may not fix in the page well without some additional CSS edits. </p>
+  <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+  <strong><br>
+  Again Save, Refresh, &amp; Test</strong></p>
+  <hr>
+  <h3>Step #6: Update the Photo</h3>
+  <p>The final step in the HTML code is to update the path to the new image you downloaded. If you placed the image within the images folder properly, then you simply have to update the filename of the image correctly. </p>
+  <p>The current image path is: </p>
+  <pre class="brush: html;">&lt;img src=&quot;images/nightsky.jpg&quot; alt=&quot;Man with flashlight looking into space.&quot; /&gt;</pre>
+  <p>Simple change the filename <em>nightsky.jpg</em> with the filename of your new image. We don't need to change the path of <em>images</em>/ since both images should be  in the same directory (aka folder). It is also a good idea to update the alt tag to have a better description that matches your image (unless you have another photo of a guy with a flashlight looking into space). </p>
+    <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i><strong><br>
+    Again Save, Refresh, &amp; Test</strong></p>
+  <p>Again, save your HTML page with the changes and review the changes of your heading, paragraph, and new image within the web browser. As you can see, the HTML is the actual content and containers of the web page. In the next steps, you'll learn how to change some of the  styles of the HTML using CSS.</p>
+</div>
+
+
+
+
+
+
+
+<span class="anchor" id="css"></span>
+<div class="title">
+  <h2> CSS Edits</h2>
+</div>
+<div class="lessons">
+  <p>In order to edit any of the CSS styles of this project, you need to open the <em><strong>styles.css</strong></em> page in your code editor by selecting it from the left-side menu. </p>
+  <h3>Web Page Background Color  </h3>
+  <pre class="brush: css;">body {
+  background-color: #252325;
+}</pre>
+  <p>This style is assigning a dark brown color (in a hexadecimal format) to the background of the entire body of the document. Unless you have graphic design experience, that color value may seem really strange. A great way to find a good color for the background is to match it to a color in the photo. If you don't have a program like Adobe PhotoShop, you can use free tools on the web to help you find the hexadecimal color formats in a photo.</p>
+  <p><a href="http://html-color-codes.info/colors-from-image/" target="_blank"><img src="images/web/htmlcolorcodes.jpg" width="640" alt=""/></a></p>
+  <p>Using the simple web page   <a href="http://html-color-codes.info/colors-from-image/" target="_blank">HTML Color Codes</a>, you can simply upload your file, click onto the &quot;Show Image&quot; button, and click anywhere on your photo to find the color value. Then you can copy that hexadecimal color value and replace the value for the background-color in the CSS code.</p>
+   <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i><strong><br>
+    Again Save, Refresh, &amp; Test</strong></p>
+  <hr>
+  <h3>Page Container Color </h3>
+  <p>You may wish to leave the background color to the page container as white (#ffffff). Of course, using the new skills of finding colors, you can change it to anything you wish. The only visual warning is to make sure that the type is readable. If you wish to have a dark background to the container, you'll want to assign lighter colors to the text in the next few steps. </p>
+  <pre class="brush: css;">
+.pageContainer {
+  width: 940px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+  </pre>
+  <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i><strong><br>
+    Again Save, Refresh, &amp; Test</strong></p>
+  <hr>
+  <h3>Typography  Color </h3>
+  <p>If you look towards the bottom of the CSS page, you'll find: </p>
+  <pre class="brush: css;">/* ---- Typography ---- */
+ 
+h1 {
+  font-family: Georgia, serif;
+  font-size: 39px;
+  color: #332117;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #161519;
+}
+  </pre>
+  <p>To change the color of the text within your web page, you need to assign a hexadecimal color value to the <em>color property</em>. The   <em>color property</em> only effects the color of text. Using the same method you picked a color from your photo, you can do the same here with the heading1 and the paragraph. </p>
+  <p>Or you can always use these common color values: </p>
+  <ul class="callout-push">
+    <li>White: #ffffff;</li>
+    <li>Black: #000000; </li>
+  </ul>
+   <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i><strong><br>
+    Again Save, Refresh, &amp; Test</strong></p>
+  <hr>
+  <h3><strong>Text Size</strong></h3>
+  <p>When working with text, you are welcome to change the font-size as well. The more common font size is measured in pixels, which is abbreviated as px. Take a moment to try setting other values. You'll have to save, refresh &amp; test each change  to see the changes in the browser. </p>
+  <ul class="callout-push">
+    <li>8px is really small</li>
+    <li>72px is really large </li>
+  </ul>
+   <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i><strong><br>
+    Again Save, Refresh, &amp; Test</strong></p>
+  <hr>
+  <h3>Font Style</h3>
+  <p>The best way to change fonts on a web page is to use <em>Web Fonts</em>. Since most web users may not have the  font you wish to use already installed on their machine, this method will attach the font file with your page to display your fonts properly. </p>
+  <p><strong>#1: Visit Google Fonts</strong></p>
+  <p>Click to open the <a href="http://www.google.com/fonts" target="_blank">Google Fonts</a> web page.</p>
+  <h3><a href="http://www.google.com/fonts" target="_blank"><img src="images/web/google-font1.jpg" width="640" alt=""/></a><br>
+</h3>
+  <hr>
+  <p><strong>#2: Choose a font</strong></p>
+  <p>Select one or two fonts you wish to add to your web page. You can set the heading as one and the paragraph as another. </p>
+  <hr>
+  <p><strong>#3: Select Use</strong></p>
+  <p>Once you are ready to add your font(s) to your site, choose the Use button within the Font Collection.</p>
+  <br>
+  <p><img src="images/web/google-font-use.jpg" width="640" alt=""/></p>
+  <p>&nbsp;</p>
+  <hr>
+  <p><strong>#4: Choose the Styles</strong></p>
+  <p>Next, you'll need to choose any of the necessary font styles you wish to use with any of these fonts. The Page Load indicator will help notify you if your font choices have a potential impact on the page load time.</p>
+  <img src="images/web/google-font-style.jpg" width="640" alt=""/><br>
+  <hr>
+  <p><strong>#5: Choose your character sets</strong></p>
+  <p>Most likely, you can ignore this set. </p>
+  <p><img src="images/web/google-font-sets.jpg" width="640" alt=""/></p>
+  <hr>
+  <p><strong>#6: Add Code to your website:</strong></p>
+  <p>This Standard technique works nice, but it is far better to use the @import to add the font files to your CSS stylesheets rather than the HTML pages. </p>
+  <p>Copy this code and place it at the very top of your <em><strong>style.css</strong></em> document. It has to be added before any of the other CSS styles. </p>
+  <p><img src="images/web/google-font-import.jpg" width="640" alt=""/></p>
+  <hr>
+  <p><strong>#7: Add Fonts to your Page</strong></p>
+  <p>Now that your fonts will load with the CSS page, now you can update the heading1 and/or the paragraph text with the appropriate name in the font-family. </p>
+  <p><img src="images/web/google-font-css.jpg" width="460" alt=""/></p>
+  <p>Again, here is your CSS for your typography. Change the font-family to the styles mentioned in the Google Font page:</p>
+  <pre class="brush: css;">/* ---- Typography ---- */
+ 
+h1 {
+  font-family: 'Oswald', serif;
+  font-size: 39px;
+  color: #332117;
+}
+
+p {
+  font-family: 'Oswald', serif;
+  font-size: 18px;
+  color: #161519;
+}
+  </pre>
+  <hr>
+  <p><strong>#8: Review your Code</strong></p>
+   <br><br>
+  <p class="center"><i class="fa fa-floppy-o fa-2x" aria-hidden="true"></i>
+    <i class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+  <strong><br>
+  Again Save, Refresh, & Test</strong></p>
+  <p>You need to complete all of those steps above before you can save your changes, but when you are ready, check out your page. </p>
+</div>
+
+
+<span class="anchor" id="explore"></span>
+<div class="title">
+  <h2>Exploring Further</h2>
+</div>
+<div class="lessons">
+  <h3>Playing in the sandbox! </h3>
+  <p>Chances are, you want to make this little project as perfect as possible.  </p>
+  <p>Consider these options: </p>
+  <ul class="callout-push">
+    <li>Are you still happy with the image you selected?</li>
+    <li>Are the colors well balanced on the page and is the text readable?</li>
+    
+    <li>Do the fonts meet the  visual style you want?</li>
+  </ul>
+  <p>If you wish, take some time playing with the visual styles. Often with front-end developement, the coding is the easy/quick part. What takes longer is paying with all the visual options available until the presentation looks the way you wish for it to be. </p>
+  <hr>
+  <h3>Breaking Code to Learn</h3>
+  <p>There is still some CSS elements that are a little beyond the scope of this first project. Although there isn't detailed lessons on all of this code, one great way to learn what each CSS property does is to change it and see what happens. You can change the floats from left to right, but because  the margins are styled with the containers floating left, the layout will be visually broken&#8212;unless you can make the appropriate adjustments.  An easy way to test the properties with number values is to change them and see what happens. </p>
+    <pre class="brush: css;">.imageContainer {
+  float: left;
+  width: 620px;
+}
+.textContainer {
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+* ---- Images ---- */
+
+img {
+  width: 100%;
+}
+</pre>
+</div>
+
+
+
+
+
+
+<span class="anchor" id="next"></span>
+<div class="title">
+  <h2>What's Next</h2>
+</div>
+<div class="lessons">
+  <p>Learning the basics of HTML and CSS isn't all that difficult because there is a limited amount of code that goes into writing web pages&#8212;similar to working with  Lego blocks that  have limited shapes, colors, etc. The complexity of web pages is learning how all these codes can be put together&#8212;similar to all the different ways Lego blocks can be arranged. Once you start understanding how to organize web layouts, you can build nearly anything you wish. </p>
+  <p class="center"><strong>Interested in learning more?</strong> </p>
+  <p class="center"><a href="3-next-steps.html" class="button">Continue ></a></p>
+  <p><img src="images/web/lego.png" width="640" alt=""/></p>
+
+</div>
+
+
+<footer>
+</footer>
+
+</body>
+</html>

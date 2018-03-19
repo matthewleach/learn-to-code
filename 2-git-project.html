@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>JavaScript Fundamentals</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
+
+<style>
+.sudoCode pre {
+  font-size: 32px;
+  font-family:'Coming Soon';
+  text-align: center;
+  background: #eee;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+</style>
+
+
+    <?php include('head.html');?>
+    
+   
+
+
+<body id="top">
+
+<div id="side-nav">
+  <div class="handle">
+        <button id="side-nav-toggle"><i class="fa fa-bookmark fa-lg"></i></button>
+  </div>
+   
+        <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#setup">Setting Up GitHub</a></li>
+        <li><a href="#first">First GitHub Repo</a></li>
+        <li><a href="#find">Find Your Repos</a></li>
+        <li><a href="#readme">Create a Readme file</a></li>
+        <li><a href="#commit">Making New Commits</a></li>
+        <li><a href="#forking">Forking</a></li>
+        <li><a href="#page">Create GitGub Webpage</a></li>
+        <li><a href="#next">What's Next</a></li>
+
+</ul>
+</div>
+
+
+
+<div class="hero">
+  <h2>Working with  GitHub</h2>
+  <p>Taking Control of Project  Versons</p>
+</div>
+
+
+<!--
+<div class="bg-dark">
+<div class="container video">
+  <iframe allowfullscreen="" src="http://player.vimeo.com/video/110498128" frameborder="0" width="960" height="540"></iframe>
+</div>
+</div>-->
+
+<span class="anchor" id="overview"></span>
+<div class="title">
+  <h2>Project Overview</h2>
+</div>
+<div class="lessons">
+  <p>In this lesson, you'll learn how to:</p>
+     <ul class="callout callout-push">
+       <li>Set up a free GitHub account</li>
+       <li>Download, install, and connect the GitHub Desktop Application</li>
+       <li>Commit and track your versions of a small web project</li>
+       <li>Fork and edit new versions of a small web project  </li>
+     </ul>
+     <p>You will also get to play with a simple pizza web page to help you learn how useful GitHub can be. </p>
+     <p><img src="images/git/pizza1.jpg" width="640" alt=""/></p>
+</div>
+  
+  
+  
+  
+  
+  
+<span class="anchor" id="setup"></span>
+<div class="title">
+  <h2>Setting Up GitHub</h2>
+</div>
+<div class="lessons">
+  <h3>Download Github for Desktop  </h3>
+  <p>If you haven't done this already,  download <a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>. </p>
+  <p><a href="https://desktop.github.com/" target="_blank"><img src="images/git/github-desktop.jpg" width="640"  alt=""/></a></p>
+  <p>GitHub Desktop is available for both Mac and Windows. Please download and install this application on your computer. If it is taking a moment to download, feel free to continue on with these lessons as you'll need to setup a GitHub account first anyways. </p>
+  <hr>
+  <h3>Setting up GitHub Account  </h3>
+  <p> Before you can use the GitHub Desktop app, you'll need to create a free account on <a href="https://github.com/" target="_blank">GitHub.com</a>. </p>
+  <p>You'll need to create a unique username, provide your email address, and provide a unique password (make sure it has at least 1 number in it or you'll be asked to create another password). </p>
+  <p><a href="https://github.com/" target="_blank"><img src="images/git/github.jpg" width="640"  alt=""/></a></p>
+  <hr>
+  <h3>Choose Your Plan</h3>
+  <p>At this time, you are welcome to start with unlimited repos for free. You can easily upgrade your account later if you need to protect certain projects by setting them to private. When you are ready, select the <strong>Finish Set Up</strong> button.</p>
+  <p><img src="images/git/github-step2.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Verify Your Email</h3>
+  <p>Before you can add a project to GitHub Desktop, you'll need to verify your email. Check your email you used with GitHub, find the email from GitHub, and click <strong>Verify email address</strong>.</p>
+  <p>&nbsp;</p>
+  <p><img src="images/git/email-verify.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Connecting GitHub Desktop</h3>
+  <p>Although you can do a lot within the GitHub.com website, you'll find it easier to connect your GitHub Desktop app with your new account. </p>
+  <p>Now, open the <strong>GitHub Desktop</strong> application.  </p>
+  <p><img src="images/git/apps.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Welcome to GitHub Desktop</h3>
+  <p>Don't skip the setup, but choose <strong>Continue</strong>. </p>
+  <p><img src="images/git/setup1.png" width="580" height="633" alt=""/></p>
+  <hr>
+  <h3>Connect to GitHub</h3>
+  <p>Enter in your Login and Password that you just provided during the Setup with GitHub.com. </p>
+  <p><img src="images/git/setup2.png" width="640" alt=""/></p>
+  <hr>
+  <h3>Connected</h3>
+  <p>This step simply shows that you are connected properly. Choose <strong>Continue</strong>. </p>
+  <p><img src="images/git/setup3.png" width="640" alt=""/></p>
+  <hr>
+  <h3>Configure Git</h3>
+  <p>Enter your email address and then select <strong>Continue</strong>. </p>
+  <p><img src="images/git/setup4.png" width="637" alt=""/>
+  </p>
+  <p>If you understand how to use Terminal, you are welcome to download and Install Command Line Tools, but this is outside the scope of this tutorial. </p>
+  <hr>
+  <h3>Find local repositories</h3>
+  <p>Since this is your first time setting up GitHub, chances are high that you don't have any existing repos. At this step, just click <strong>Done</strong>. </p>
+  <p><img src="images/git/setup5.png" width="661" height="626" alt=""/></p>
+  <hr>
+  <h3>Removing the Tutorial</h3>
+  <p>You are welcome to skip this step, but this 'tutorial' isn't always the easiest for beginners to learn GitHub from. In this case, we'll right-click on the title along the left-hand side and choose <strong>Remove</strong> to delete it. You can always use this technique to delete other projects from GitHub if you wish, as well. </p>
+  <p><img src="images/git/setup7.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Whew!</h3>
+  <p>Ok&#8230;the GitHub Desktop application is ready for you to add your own projects. Read on! </p>
+</div>
+
+
+
+
+
+
+<span class="anchor" id="first"></span>
+<div class="title">
+  <h2>First GitHub Repo</h2>
+</div>
+<div class="lessons">
+
+
+  <h3>Start With  a Project Folder</h3>
+  <p>You may already have a project you wish to add onto GitHub, but for the time being, let's have a little fun with a simple web page that showcases your potential favorite pizza toppings.  </p>
+  <p><a href="project/git/pizza.zip"><img src="images/git/pizza1.jpg" width="640"  alt=""/></a></p>
+  <p><a href="project/git/pizza.zip"> <button class="primary center-block">Download Pizza Web Page</button>
+  </a></p>
+
+ 
+  </a></p>
+  <hr>
+  <h3>Organize Your Project Folder</h3>
+  <p> At this time, unzip your <strong>pizza.zip</strong> file and move the <strong>pizza</strong> folder into a good location on your computer. One suggestion would be to create a folder on your desktop called <strong>www</strong> and then you can place each web project within that.  If necessary, your projects can be moved after they are connected to GitHub Desktop.  </p>
+  <p><img src="images/git/files.jpg" width="640" height="108" alt=""/></p>
+  <hr>
+  <h3>Add your Project to GitHub Desktop</h3>
+  <p>Connecting your web project to GitHub is as simple as dragging the project folder over the GitHub Desktop application and dropping it. </p>
+  <p><img src="images/git/drag-github.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Creating your first Repo</h3>
+  <p>Yes! You want to create a new git repo here! Click <strong>Create and Add</strong>. </p>
+  <p><img src="images/git/add2.png" width="640"  alt=""/></p>
+  <hr>
+  <h3>View Files in GitHub Desktop</h3>
+  <p>At this step, you can click through and view all of the files that GitHub recognizes in the <strong>pizza</strong> folder. Feel free to click onto the HTML and CSS pages to see the code from each file that is being saved.  </p>
+  <p><img src="images/git/add3.png" width="640"  alt=""/></p>
+  <hr>
+  <h3>Adding Summary &amp; Description</h3>
+  <p>Every version of this project that you wish to commit changes to, needs  a Summary and Description for this particular version of the project. </p>
+  <p>This would be a good example: </p>
+  <p><img src="images/git/add4.png" width="640"  alt=""/></p>
+  <ul class="callout-push">
+    <li><em><strong>Summary: First Draft</strong></em></li>
+    <li><em><strong>Description: HTML: With  a heading, unordered list, and a photo, and CSS: initial styled layout. </strong></em><strong></strong></li>
+  </ul>
+  <p>Every time  a version is committed (aka saved), it is good practice to add a useful Summary and Description of the changes  made. Since this is your first draft, feel free to keep it simple. </p>
+  <p>Once you are ready to upload your files,  simply click <strong>Commit to Master</strong>.</p>
+  <hr>
+  <h3>Adding Name &amp; Description</h3>
+  <p>This step can seem a little redundant at first, but once you create your first commit, you'll have the opprotunity to create a repo name and description for this entire project. In this case, the Name is a simple title and the description is a general project overview. Once you have a name and description added, select <strong>Publish Repository</strong>. At this time, your files should start uploading to GitHub.com. In the case they don't, simply click the Publish button in the upper-right. </p>
+  <p><img src="images/git/add5.png" width="640"  alt=""/></p>
+  <hr>
+  <h3>First Commit Completed</h3>
+  <p>Congratulations. At this time, you have made your first commitment. </p>
+  <p><img src="images/git/add6.png" width="640"  alt=""/></p>
+
+</div>
+
+
+<span class="anchor" id="find"></span>
+<div class="title">
+  <h2>Find Your Repos</h2>
+</div>
+<div class="lessons">
+  <p>Once the files are committed to GitHub, the project is now stored in two places:</p>
+  <ul>
+    <li>
+      <p><strong>Local repository on your computer</strong> — You can work on this repository without an Internet connection using GitHub Desktop. This is where you edit files and make changes to your project.</p>
+    </li>
+    <li>
+      <p><strong>Remote repository on GitHub.com</strong> — You can send people links to your repository on GitHub.com so they can see your code, file organization, and fork your own projects and build off of them. </p>
+    </li>
+  </ul>
+  <p>In Jenny's example we are using, her GitHub repo can be found here: <br>
+    <a href="https://github.com/jennygalvanize/Pizza" target="_blank">https://github.com/jennygalvanize/Pizza</a></p>
+  <p><a href="https://github.com/jennygalvanize/Pizza" target="_blank"><img src="images/git/add8.jpg" width="640"  alt=""/></a></p>
+</div>
+
+
+<span class="anchor" id="readme"></span>
+<div class="title">
+  <h2>Create a Readme file</h2>
+</div>
+<div class="lessons">
+  <p>While following best practices when working with GitHub, it is a great idea to create a unique ReadMe file that provides a better description of this project. To do this within Github, click the Add a README button. </p>
+  <p><img src="images/git/github-readme.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Create Readme</h3>
+  <p>This Readme file can be kept simple at this time. You can leave a note here that will make it easier to read up on while visiting GitHub.com. When you are down, add a Summary and then feel free to commit this file directly to the master branch by clicking <strong>Commit new file</strong>. </p>
+  <p><img src="images/git/readme.jpg" width="640"  alt=""/></p>
+  <hr>
+  <h3>Sync Local and Online Files</h3>
+  <p>Because you just made a change to your files online, you'll watch your local files to match exactly. This can be done by clicking the <strong>Sync</strong> button. This will pull the changes from online to your local computer.  </p>
+  <p><img src="images/git/sync.png" width="640"  alt=""/></p>
+  <hr>
+  <h3>View New Files</h3>
+  <p>Now that you synced your files, you'll be able to see that the new Readme file has been duplicated on your local computer now, too! </p>
+  <p><img src="images/git/new-files.png" alt=""/></p>
+</div>
+
+
+<span class="anchor" id="commit"></span>
+<div class="title">
+  <h2>Making New Commits</h2>
+</div>
+<div class="lessons">
+  <p>In order to give you a little more experience with making changes and new commits, let's give you the opprotunity to make a few changes to this project and commit the new version online. </p>
+  <p>At this time, open the HTML and/or the CSS documents into your code editor. You are welcome to edit the HTML and/or the CSS in any way you wish, but if web coding is still new for you, you can choose to only change the text within the List Items (between the &lt;li&gt; and the &lt;/li&gt; of the unordered list). </p>
+<pre class="brush: html;">
+&lt;ul&gt;
+  &lt;li&gt;Pepperoni&lt;/li&gt;
+  &lt;li&gt;Cheese&lt;/li&gt;
+  &lt;li&gt;Basil&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+  <p>If you need some help with thinking of pizza topping choices, you are welcome to find your top three items from this list: </p>
+  <div style="width: 45%; float:left; padding-right: 5%;">
+    <p><strong>Sauces</strong></p>
+    <ul>
+      <li>BBQ Sauce</li>
+      <li>Hot Buffalo Sause</li>
+      <li>Chipotle Cilandtro Sause</li>
+      <li>Italian Tomato (Traditional Pizza) Sause</li>
+      <li>Pesto Sause</li>
+      <li>Salsa Sause</li>
+      <li>White Cream Sause</li>
+    </ul>
+    <p><strong>Cheeses</strong></p>
+    <ul>
+      <li>Parmesan </li>
+      <li>Goat</li>
+      <li>Mozzarella</li>
+      <li>Formaggio Blend</li>
+      <li>Feta</li>
+      <li>Cheddar</li>
+      <li>Mexicana 3-Cheese Blend</li>
+      <li>Cottage</li>
+    </ul>
+  </div>
+  <div style="width: 45%; float:left">
+    <p><strong>Veggies</strong></p>
+    <ul>
+      <li>Spinach</li>
+      <li>Black Olives</li>
+      <li>Tomatoes</li>
+      <li>Green Olives</li>
+      <li>Banana Peppers</li>
+      <li>Jalapenos</li>
+      <li>Kalamata Olives</li>
+      <li>Onions</li>
+      <li>Red Peppers</li>
+      <li>Mushrooms</li>
+      <li>Corn</li>
+    </ul>
+    <p><strong>Protein</strong></p>
+    <ul>
+      <li>Anchovies</li>
+      <li>Bacon</li>
+      <li>Canadian Ham</li>
+      <li>Chorizo Sausage</li>
+      <li>Chicken</li>
+      <li>Pepperoni</li>
+      <li>Sausage</li>
+    </ul>
+  </div>
+    <div style="clear:both">
+  </div>
+  
+  
+  
+  <p>&nbsp;</p>
+  <hr>
+  <h3>Reviewing New Changes</h3>
+  <p>Once you have made your edits, make sure you save your files. Then, when you look within GitHub Desktop, you'll see that the app recognizes the differences made and displays the before and after changes. </p>
+  <p><img src="images/git/edit1.png" width="640" alt=""/></p>
+  <p>&nbsp;</p>
+  <hr>
+  <h3>Committing New Changes</h3>
+  <p>As you did before, when you are ready to commit your changes, make sure you add a new summary and description. Then commit your changes to the master. </p>
+  <p><img src="images/git/edit2.png" width="640" alt=""/></p>
+  <hr>
+  <h3>Tracking All Changes  </h3>
+  <p>You may have noticed the growing number of dots along the top-right of the app. You can click these, or even the list of your commits, and track the edits from the time you started your First Draft through all the changes of this project.  </p>
+  <p>&nbsp;</p>
+  <p><img src="images/git/edit3.png" width="640" alt=""/></p>
+</div>
+
+
+
+<span class="anchor" id="forking"></span>
+<div class="title">
+  <h2>Forking</h2>
+</div>
+<div class="lessons">
+  
+  <p>Now that you are getting more comfortable working with your own files, let's learn how to fork a project from someone else and edit it. Remember, forking a project just means that you are a making a duplicate of the project and then giving yourself access to edit it. </p>
+  <p>For this demo, this is another project featuring 'our' favorite cookies. Follow these directions and you'll learn how to properly fork a project on GitHub and get it connected to your GitHub Desktop. </p>
+  <hr>
+  <h3>Find GitHub Project to Fork</h3>
+  <p>Let's find a web project we can fork: <br>
+  <a href="https://github.com/GalvanizeOpenSource/Demo-Favorite-Cookies-Web-Page" target="_blank">https://github.com/GalvanizeOpenSource/Demo-Favorite-Cookies-Web-Page</a>  </p>
+  <p>Forking a project you have access to to GitHub is as easy as clicking the Fork button in the upper-right. </p>
+  <p><a href="https://github.com/GalvanizeOpenSource/Demo-Favorite-Cookies-Web-Page" target="_blank"><img src="images/git/fork1.png" alt="" width="640" border="0"/></a></p>
+  <p>How easy is that??</p>
+  <hr>
+  <h3>Fork on GitHub</h3>
+  <p>Now that you have it forked and a copy pulled into your GitHub account, you'll want to clone the files to your local computer. </p>
+  <p>Click the <strong>Clone or Download</strong> button, then choose the <strong>Open in Desktop</strong> button. This will copy the files from GitHub.com onto your local computer and set up this project within the GitHub Desktop as well. </p>
+  <p><img src="images/git/fork2.png" alt="" width="640" border="0"/></p>
+  <p>You'll have the option at this time to save the project folder anywhere you wish. </p>
+  <p><img src="images/git/fork3.png" alt="" width="640" border="0"/></p>
+  <hr>
+  <h3>Cookie Challenge</h3>
+  <p>Now that you have the project forked and cloned, you can edit the project files any way you wish and then commit the changes online as you have already learn. </p>
+  <p>Take a few minutes and use your existing HTML/CSS skills to update the demo: </p>
+  <ul class="callout-push">
+    <li>(Easy) Update  the Unordered List Items listing your top 3 favorite cookies. </li>
+    <li>(Harder) Update a new image and then style the background colors and text accordingly.</li>
+    <li>Commit your changes to GitHub.com</li>
+  </ul>
+  <p><img src="images/git/cookies.jpg" alt="" width="640" border="0"/></p>
+</div>
+<strong></strong>
+  
+  
+  
+<span class="anchor" id="page"></span>
+<div class="title">
+  <h2>Create GitGub Webpage</h2>
+</div>
+<div class="lessons">
+  
+  <p>At this point, you have 2 simple projects that are posted onto GitHub. Very few people will care about your GitHub directory since they can't see your files without downloading them. Now is your opprotunity to turn your GitHub repo into an actual web page in a few easy steps. </p>
+  <hr>
+  <h3>Step 1: Create new branch</h3>
+  <ol class="callout-push">
+    <li>Choose one of your project repos on GitHub.com, click the button <strong>Branch: master</strong>.<br>
+      </li>
+    <li>Then give this new branch the name &quot;gh-pages&quot;. Yes, it has to be exactly that branch name to work. </li>
+    <li>Then click on the <strong>Create branch: gh-pages</strong> button.</li>
+  </ol>
+  <h3><img src="images/git/pages1.jpg" alt="" width="640" border="0"/></h3>
+  <hr>
+  <h3>Step 2: Change the default branch</h3>
+  <ol class="callout-push">
+    <li>Click onto <strong>Setting</strong><br>
+    </li>
+    <li>Then click onto <strong>Branches</strong></li>
+    <li>Then select the <strong>master</strong> dropdown and change it to <strong>gh-pages</strong>.</li>
+    <li>The select the Update button. </li>
+    <li>When prompted, &quot;Are you sure?&quot;, click the button<strong> I understand, update the default branch</strong>.</li>
+  </ol>
+  <p><img src="images/git/pages2.jpg" alt="" width="640" border="0"/></p>
+  <hr>
+  <h3>Step 3: Update GitHub Desktop</h3>
+  <p>Right now, your GitHub Desktop will post all new changes still to the <strong>master</strong> branch, but you now want it to upload to your <strong>gh-pages</strong> branch. Within GitHub Desktop, click the master branch download and select <strong>gh-pages</strong>.  </p>
+  <p><img src="images/git/pages4.png" alt="" width="640" border="0"/></p>
+  <hr>
+  <h3>Step 4: Find your Web Address (URL)</h3>
+  <p>Back within Settings, if you scroll down, you'll find the URL to your GitHub Pages. </p>
+  <p><img src="images/git/pages3.jpg" alt="" width="640" border="0"/></p>
+  <hr>
+  <h3>Step 4: Bask in your Glory</h3>
+  <p>Take a moment to feel great about all that you were able to accomplish with these lesson. Now you have the skills to manage your web projects and get them live online.  </p>
+  <p><a href="https://jennygalvanize.github.io/pizza/" target="_blank"><img src="images/git/pages5.jpg" alt="" width="640" border="0"/></a></p>
+  <h5 style="padding-left: 350px;">Link: <a href="https://jennygalvanize.github.io/pizza/" target="_blank">https://jennygalvanize.github.io/pizza/</a></h5>
+</div>
+
+
+
+
+
+<span class="anchor" id="next"></span>
+<div class="title">
+  <h2>What's Next</h2>
+</div>
+<div class="lessons">
+  <p>Now that you understand the basics of managing your web projects, consider taking some time learning more about HTML/CSS and JavaScript.  </p>
+  <p class="center"><strong>Interested in learning more?</strong> </p>
+  <p class="center"><a href="3-next-steps.html" class="button">Continue ></a></p>
+</div>
+
+
+
+<p>
+  <?php include('footer.html');?>
+  
+</p>
+
+</body>
+</html>
+
+
